@@ -1,0 +1,62 @@
+//============================//
+this exercise is from colt steele course
+
+
+//============================//
+// listen from submit
+// prevent default
+// grab product value
+// grab quantity value
+// create li
+// add qty and product to li
+// append li to ul
+//============================//
+
+feel free to copy code...
+//============================//
+
+
+<!DOCTYPE html>
+
+<head>
+    <title>Grocery List</title>
+</head>
+
+<body>
+    <h1>Grocery List</h1>
+    <form action="/nowhere">
+        <label for="item">Enter A Product</label>
+        <input type="text" id="product" name="product">
+        <label for="item">Enter A Quantity</label>
+        <input type="number" id="qty" name="qty">
+        <button>Submit</button>
+    </form>
+
+    <ul id="list"></ul>
+</body>
+
+</html>
+
+
+
+
+//=======================//
+JavaScript code
+//======================//
+
+
+
+const form = document.querySelector('form');
+const ul = document.querySelector('#list')
+form.addEventListener("submit", (e) => {
+    // preventing the browser from refreshing
+    e.preventDefault()
+    const quantity = document.querySelector('#qty')
+    const product = document.querySelector('#product')
+    const li = document.createElement("li")
+    li.innerText = `${quantity.value} ${product.value}`
+    
+    ul.appendChild(li)
+    quantity.value = ''
+    product.value = ''
+})

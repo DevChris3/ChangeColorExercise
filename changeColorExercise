@@ -1,5 +1,7 @@
 //------------------------------------//
-CHANGE COLOR EXERCISE
+THIS IS A "CHANGE COLOR EXERCISE"
+
+IF YOU NOTICE, EACH COLOR CHANGES WITH A CLICK OF A BUTTON
 
 Feel FREE to copy the code...
 
@@ -22,19 +24,6 @@ Feel FREE to copy the code...
     <script src="app.js"></script>
   </body>
 </html>
-
-|
-|
-|
-|
-v
-v
-v
-v
-v
-v
-v
-v
 
 
 //------------------------------------//
@@ -60,3 +49,7 @@ const randomColor = () => {
     const b = Math.floor(Math.random() * 255);
     return `rgb(${r}, ${g}, ${b})`;
 }
+
+
+
+FEEL FREE TO CONTRIBUTE....
